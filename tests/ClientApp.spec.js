@@ -1,5 +1,6 @@
 const {test,expect} = require('@playwright/test');
 
+// Jenkins CI Test
 test('Browser Context-Validating Error message in Login Page', async({page})=>
 {
     const productName = 'ADIDAS ORIGINAL';
