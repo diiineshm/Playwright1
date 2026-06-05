@@ -4,7 +4,7 @@ import { POManager } from '../pageobjects_ts/POManager';
 
 //Json -> string -> js object (to avoid encoding issues, first convert into string and them java object)
 const dataset = JSON.parse(JSON.stringify(require("../test-data/placeorderTestData.json")));
-
+// Jenkins CI test
 for (const data of dataset) { //Parameterization using json file
     test(`@Web Client App login ${data.productName}`, async ({ page }) => {//no two test can have same name
         //js file- Login js, DashboardPage
