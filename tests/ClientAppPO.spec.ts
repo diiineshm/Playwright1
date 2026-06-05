@@ -6,7 +6,7 @@ import { POManager } from '../pageobjects_ts/POManager';
 const dataset = JSON.parse(JSON.stringify(require("../test-data/placeorderTestData.json")));
 
 for (const data of dataset) { //Parameterization using json file
-    test.only(`@Web Client App login ${data.productName}`, async ({ page }) => {//no two test can have same name
+    test(`@Web Client App login ${data.productName}`, async ({ page }) => {//no two test can have same name
         //js file- Login js, DashboardPage
         //test data is in json file
 
